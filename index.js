@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 //Route
 app.get('/', function(res){
-	res.send("Hi Im a chatbotv1 "");
+	res.send("Hi Im a chatbotv1 ");
 });
 
 
