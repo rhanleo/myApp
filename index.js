@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 
 
 //Route
-app.get('/', function(req, res){
+app.get('/', function(res){
 	res.send('Hi Im a chatbotv1.. ');
 });
 
