@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 //Route
 app.get('/', function(req, res){
-	res.send('Hi I\'m a chatbotv1.. ');
+	res.send('Hi Im a chatbotv1.. ');
 });
 
 //Facebook
