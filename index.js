@@ -6,7 +6,7 @@ const request = require('request')
 
 const app = express()
 
-app.set('port', (process.env.PORT || 5000))
+app.set('port', (process.env.PORT || 3000))
 
 //Allow us to process data
 app.use(bodyParser.urlencoded({extended: false}))
@@ -14,13 +14,13 @@ app.use(bodyParser.json())
 
 
 //Route
-app.get('/', function(res){
+app.get('/', function(req, res){
 	res.send("Hi Im a chatbotv1 ")
 })
 
 
 //Facebook
-app.get('/webhook', function(req, res){
+app.get('/webhook/', function(req, res){
 	if(req.query['hub.verify_token'] === 'rhanbarredo123!'){
 		res.send(req.query['hub.challenge'])
 	}else{
@@ -28,7 +28,7 @@ app.get('/webhook', function(req, res){
 	}
 })
 app.listen(app.get('port'), function(){
-	console.log('running: port')
+	console.log('running: port',app.get('port'))
 })
 
 
