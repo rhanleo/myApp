@@ -17,7 +17,10 @@ app.use(bodyParser.json())
 
 //Route
 app.get('/', function(req, res){
-	res.send("Hi Im a chatbotv1 ")
+	res.send("Hi Im Zofia Loooopez ")
+})
+app.get('/rhan', function(req, res){
+	res.send("Hi Im Rhan ")
 })
 
 
