@@ -27,8 +27,8 @@ app.get('/webhook/', function(req, res){
 		res.send('Wrong Token')
 	}
 })
-app.listen(process.env.PORT || 5000), function(){
-	console.log('running: port',app.get('port'))
+app.listen(process.env.PORT || 5000, function(){
+	console.log('running: port')
 })
 
 
