@@ -1,0 +1,17 @@
+{
+  "name": "chatbotdenov1",
+  "version": "0.0.1",
+  "description": "This for demo only created by: rhan barredo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rhan Barredo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "4.16.2",
+    "foobar": "^1.1.0",
+    "request": "^2.83.0"
+  }
+}
